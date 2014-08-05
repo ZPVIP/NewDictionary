@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NDTranslateEngine.h"
+
+
+#define NDApplicationDelegate ((NDAppDelegate *)[UIApplication sharedApplication].delegate)
 
 @interface NDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, strong) NDTranslateEngine *translateEngine;
 
 @end

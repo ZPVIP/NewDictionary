@@ -43,4 +43,20 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+#pragma -mark 
+- (NDTranslateEngine *)translateEngine {
+    if (!_translateEngine) {
+        NSMutableDictionary *headerFields = [NSMutableDictionary dictionary];
+        [headerFields setValue:@"iOS" forKey:@"youdao-client-identifier"];
+        _translateEngine = [[NDTranslateEngine alloc]initWithHostName:@"fanyi.youdao.com" customHeaderFields:headerFields];
+    }
+    return _translateEngine;
+}
+
+
+
+
+
+
 @end

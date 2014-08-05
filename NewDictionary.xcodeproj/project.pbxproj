@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4696E41E58748DFB4728CE6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A9F3A6D1E9419098A8B7C9 /* libPods.a */; };
 		D6D73AF8198FC4CB00137792 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D73AF7198FC4CB00137792 /* Foundation.framework */; };
 		D6D73AFA198FC4CB00137792 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D73AF9198FC4CB00137792 /* CoreGraphics.framework */; };
 		D6D73AFC198FC4CB00137792 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D73AFB198FC4CB00137792 /* UIKit.framework */; };
@@ -22,6 +23,8 @@
 		D6D73B1C198FC4CB00137792 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D73AFB198FC4CB00137792 /* UIKit.framework */; };
 		D6D73B24198FC4CB00137792 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6D73B22198FC4CB00137792 /* InfoPlist.strings */; };
 		D6D73B26198FC4CB00137792 /* NewDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D73B25198FC4CB00137792 /* NewDictionaryTests.m */; };
+		D6D73B32199067D800137792 /* NDWord.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D73B31199067D800137792 /* NDWord.m */; };
+		D6D73B35199068D100137792 /* NDTranslateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D73B34199068D100137792 /* NDTranslateEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC96F56723EE4486879C88C5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D6D73AF4198FC4CB00137792 /* NewDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D73AF7198FC4CB00137792 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6D73AF9198FC4CB00137792 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +59,11 @@
 		D6D73B21198FC4CB00137792 /* NewDictionaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewDictionaryTests-Info.plist"; sourceTree = "<group>"; };
 		D6D73B23198FC4CB00137792 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6D73B25198FC4CB00137792 /* NewDictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewDictionaryTests.m; sourceTree = "<group>"; };
+		D6D73B30199067D800137792 /* NDWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDWord.h; sourceTree = "<group>"; };
+		D6D73B31199067D800137792 /* NDWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDWord.m; sourceTree = "<group>"; };
+		D6D73B33199068D100137792 /* NDTranslateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTranslateEngine.h; sourceTree = "<group>"; };
+		D6D73B34199068D100137792 /* NDTranslateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTranslateEngine.m; sourceTree = "<group>"; };
+		F1A9F3A6D1E9419098A8B7C9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 				D6D73AFA198FC4CB00137792 /* CoreGraphics.framework in Frameworks */,
 				D6D73AFC198FC4CB00137792 /* UIKit.framework in Frameworks */,
 				D6D73AF8198FC4CB00137792 /* Foundation.framework in Frameworks */,
+				D4696E41E58748DFB4728CE6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +98,7 @@
 				D6D73B1F198FC4CB00137792 /* NewDictionaryTests */,
 				D6D73AF6198FC4CB00137792 /* Frameworks */,
 				D6D73AF5198FC4CB00137792 /* Products */,
+				BC96F56723EE4486879C88C5 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +118,7 @@
 				D6D73AF9198FC4CB00137792 /* CoreGraphics.framework */,
 				D6D73AFB198FC4CB00137792 /* UIKit.framework */,
 				D6D73B19198FC4CB00137792 /* XCTest.framework */,
+				F1A9F3A6D1E9419098A8B7C9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +126,7 @@
 		D6D73AFD198FC4CB00137792 /* NewDictionary */ = {
 			isa = PBXGroup;
 			children = (
+				D6D73B2F1990676800137792 /* Models */,
 				D6D73B06198FC4CB00137792 /* NDAppDelegate.h */,
 				D6D73B07198FC4CB00137792 /* NDAppDelegate.m */,
 				D6D73B09198FC4CB00137792 /* Main_iPhone.storyboard */,
@@ -155,6 +168,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D6D73B2F1990676800137792 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6D73B30199067D800137792 /* NDWord.h */,
+				D6D73B31199067D800137792 /* NDWord.m */,
+				D6D73B33199068D100137792 /* NDTranslateEngine.h */,
+				D6D73B34199068D100137792 /* NDTranslateEngine.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6D73B29198FC4CB00137792 /* Build configuration list for PBXNativeTarget "NewDictionary" */;
 			buildPhases = (
+				637CAC5CADC24874A0102488 /* Check Pods Manifest.lock */,
 				D6D73AF0198FC4CB00137792 /* Sources */,
 				D6D73AF1198FC4CB00137792 /* Frameworks */,
 				D6D73AF2198FC4CB00137792 /* Resources */,
+				1FFA8B1F62164610A0FBBADF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,12 +275,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FFA8B1F62164610A0FBBADF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		637CAC5CADC24874A0102488 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6D73AF0198FC4CB00137792 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D73B35199068D100137792 /* NDTranslateEngine.m in Sources */,
 				D6D73B11198FC4CB00137792 /* NDViewController.m in Sources */,
+				D6D73B32199067D800137792 /* NDWord.m in Sources */,
 				D6D73B08198FC4CB00137792 /* NDAppDelegate.m in Sources */,
 				D6D73B04198FC4CB00137792 /* main.m in Sources */,
 			);
@@ -388,6 +449,7 @@
 		};
 		D6D73B2A198FC4CB00137792 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC96F56723EE4486879C88C5 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -401,6 +463,7 @@
 		};
 		D6D73B2B198FC4CB00137792 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC96F56723EE4486879C88C5 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,6 +534,7 @@
 				D6D73B2B198FC4CB00137792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6D73B2C198FC4CB00137792 /* Build configuration list for PBXNativeTarget "NewDictionaryTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +543,7 @@
 				D6D73B2E198FC4CB00137792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

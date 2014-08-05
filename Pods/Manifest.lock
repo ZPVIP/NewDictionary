@@ -1,0 +1,17 @@
+PODS:
+  - JSONKit-NoWarning (1.2)
+  - MKNetworkKit (0.87):
+    - Reachability (~> 3.1.0)
+  - Reachability (3.1.0)
+
+DEPENDENCIES:
+  - JSONKit-NoWarning (~> 1.1)
+  - MKNetworkKit
+  - Reachability (= 3.1.0)
+
+SPEC CHECKSUMS:
+  JSONKit-NoWarning: fc8d6dd8ec65e303867d1bd274632fc60a4a8ab9
+  MKNetworkKit: 83e6296a8d42e98a71880424a889773654846d74
+  Reachability: 14a77fa94dd71d434503d2d550d1881fb00a5d86
+
+COCOAPODS: 0.33.1
